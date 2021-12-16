@@ -192,6 +192,7 @@ class EEGfuseNet_Channel_62(nn.Module):
             x = self.deconv1(x)
             return x,code
 
+# Discriminator for DEAP,HCI
 class Discriminator_Channel_32(nn.Module):
         def __init__(self,n_layer,n_filters,input_size):
             super(Discriminator_Channel_32, self).__init__()
@@ -211,7 +212,6 @@ class Discriminator_Channel_32(nn.Module):
             # encoder
             x = self.conv1(x)
             x = self.batchNorm1(x)
-#            x = self.dropout4(x)
             # Layer 2
             x = self.depthwiseconv2(x)
             x = self.batchNorm2(x)       
@@ -229,7 +229,8 @@ class Discriminator_Channel_32(nn.Module):
             x = self.fc1(x)
             x=torch.sigmoid(x)
             return x
-
+        
+# Discriminator for SEED
 class Discriminator_Channel_62(nn.Module):
         def __init__(self,n_layer,n_filters,input_size):
             super(Discriminator_Channel_62, self).__init__()
