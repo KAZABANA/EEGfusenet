@@ -8,5 +8,6 @@ Discriminator_Channel_62: Discriminator setting for 62 Channels signal (SEED)
 
 DEAP_model: Pretrained EEGfusenet model for DEAP dataset. The input of this model should be the preprocessed signal. Details about the preprocessing
 procedures and the hypergraph clustering can be found in the appendix of our paper.
-If you find the paper or this repo useful, please cite
+If you find the paper or this repo useful, please cite:
+
 @article{9535130,  author={Liang, Zhen and Zhou, Rushuang and Zhang, Li and Li, Linling and Huang, Gan and Zhang, Zhiguo and Ishii, Shin},  journal={IEEE Transactions on Neural Systems and Rehabilitation Engineering},   title={EEGFuseNet: Hybrid Unsupervised Deep Feature Characterization and Fusion for High-Dimensional EEG With an Application to Emotion Recognition},   year={2021},  volume={29},  number={},  pages={1913-1925},  doi={10.1109/TNSRE.2021.3111689}}
