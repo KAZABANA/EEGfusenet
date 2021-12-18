@@ -5,11 +5,7 @@ EEGfusenet_Channel_62: EEGfuseNet setting for 62 Channels signal (SEED)
 Discriminator_Channel_32: Discriminator setting for 32 Channels signal (DEAP,HCI)
 Discriminator_Channel_62: Discriminator setting for 62 Channels signal (SEED)
 
-
-Pretrained_model: Pretrained EEGfusenet model for DEAP dataset, you could load it by function torch.load. For example:
-
-model=EEGfuseNet_Channel_32(...).cuda(0)
-model.load_state_dict(torch.load('Pretrained_model.pkl'))
+Pretrained_model: Pretrained EEGfusenet model for DEAP dataset, you could load it by function torch.load.
 
 The input of this model should be the preprocessed signal. Details about the preprocessing procedures and hypergraph clustering can be found in the appendix of our paper.
 Appendix Link: https://drive.google.com/file/d/1pIphu7LD5MrHsN6GRy1-xZcc9CtV24tm/view?usp=sharing
