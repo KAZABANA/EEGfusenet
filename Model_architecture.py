@@ -2,6 +2,9 @@
 """
 @author: RushuangZhou
 """
+#Please cite our paper as:
+#Z. Liang, R. Zhou, L. Zhang, L. Li, G. Huang, Z. Zhang, and S. Ishii, EEGFuseNet: Hybrid Unsupervised Deep Feature Characterization and Fusion for High-Dimensional EEG With an #Application to Emotion Recognition, IEEE Transactions on Neural Systems and Rehabilitation Engineering, 29, pp. 1913-1925, 2021.
+
 import torch.nn as nn
 import torch.nn.functional as F
 import torch
@@ -212,7 +215,6 @@ class Discriminator_Channel_32(nn.Module):
             # encoder
             x = self.conv1(x)
             x = self.batchNorm1(x)
-#            x = self.dropout4(x)
             # Layer 2
             x = self.depthwiseconv2(x)
             x = self.batchNorm2(x)       
